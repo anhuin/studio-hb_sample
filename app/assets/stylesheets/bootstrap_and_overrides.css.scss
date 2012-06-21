@@ -1,0 +1,124 @@
+// Set the correct sprite paths
+$iconSpritePath: image-url('glyphicons-halflings.png');
+$iconWhiteSpritePath: image-url('glyphicons-halflings-white.png');
+@import "bootstrap";
+body { padding-top: 60px; }
+@import "bootstrap-responsive";
+
+/*
+.content
+{
+  background-color: #333;
+  padding: 20px;
+  margin: 0 -20px; // negative indent the amount of the padding to maintain the grid system
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+*/
+
+.label-inline
+{
+  display: inline;
+  vertical-align: middle;
+}
+
+/** Footer **/
+
+.footer-black
+{
+  background-color: #2C2C2C;
+  padding-top: 19px;
+  padding-bottom: 8px;
+  margin-top: 19px;
+}
+
+.footer-down
+{
+  margin-top: 10px;
+}
+
+footer h4
+{
+  font-size: 16px;
+  line-height: 24px;
+  color: #999;
+}
+
+footer h5
+{
+  color: #999;
+  text-align: center;
+}
+
+footer a
+{
+  color: white;
+}
+
+footer a:hover, a:active
+{
+  color: white;
+}
+
+/** container-fluid min width **/
+
+.container-fluid
+{
+  min-width: 1025px;
+}
+
+/** engine show **/
+
+.layout-table
+{
+  table-layout: fixed;
+  width: 100%;
+}
+
+colgroup
+{
+  display: table-column-group;
+}
+
+col
+{
+  display: table-column;
+}
+
+tbody
+{
+  display: table-row-group;
+  vertical-align: top;
+}
+
+tr
+{
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+td, th
+{
+  display: table-cell;
+  vertical-align: inherit;
+}
+
+.credit-label
+{
+  font-size: 12px;
+  margin: 5px 0 5px 0;
+  min-width: 100px;
+  padding-right: 5px;
+  text-transform: uppercase;
+}
+
+.credit-cell
+{
+  padding: 0 1em 1em 0;
+}
+

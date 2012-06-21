@@ -1,0 +1,37 @@
+<div class="span3"></div>
+<div class="span6 well">
+    <h2>Sign up</h2>
+    <p></p>
+
+    <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+      <%= devise_error_messages! %>
+
+      <div>
+        <%= f.label :login %>
+        <%= f.text_field :login %>
+      </div>
+
+      <div><%= f.label :email %>
+        <%= f.email_field :email %>
+      </div>
+
+      <div><%= f.label :birthday %>
+        <%= f.date_select(:birthday, {:start_year => DateTime.now.year - 100}, :style => "width: 120px;") %>
+      </div>
+
+      <div><%= f.label :password %>
+        <%= f.password_field :password %>
+      </div>
+
+      <div><%= f.label :password_confirmation %>
+         <%= f.password_field :password_confirmation %>
+      </div>
+
+      <div>
+        <p></p>
+        <%= f.submit "Sign up", :class => "btn btn-primary" %>
+      </div>
+    <% end %>
+
+    <%= render :partial => "devise/shared/links" %>
+</div>

@@ -1,0 +1,120 @@
+movie.css// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.scss.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.top_scolling_wrapper
+{
+  margin-right: -20px;
+}
+
+.top_scrolling_jacket
+{
+  margin-right: 20px;
+}
+
+.search-wrapper
+{
+  width: 500px;
+  margin:0px auto;
+}
+
+/** WISH LIST **/
+
+.wish-list-container
+{
+  padding-top: 20px;
+  padding-left: 5px;
+  margin-right: 20px;
+}
+
+h1, h2, h3
+{
+  padding: 0 10px 0 0;
+}
+
+.snippet-list
+{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.snippet-list li
+{
+  border-bottom: 1px solid
+  #CECECE;
+  list-style-type: none;
+  margin-left: 0;
+  padding: 7px 0;
+}
+
+.snippet
+{
+  color: #515151;
+}
+
+.snippet-small
+{
+  padding: 0;
+  margin-right: -40px;
+  width: 242px;
+  overflow: hidden;
+}
+
+.snippet .thumbnail-wrapper
+{
+  text-align: center;
+  zoom: 1;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.snippet-small .details, .books .snippet-small .thumbnail-wrapper, .engines .snippet-small .details, .engines .snippet-small .thumbnail-wrapper
+{
+  display: block;
+  float: left;
+}
+
+.snippet-small img
+{
+  width: 56px;
+}
+
+.details
+{
+  margin-top: 4px;
+  padding-left: 10px;
+  width: 150px;
+  display: block;
+  float: left;
+}
+
+.details a
+{
+  color: #414242;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  white-space: normal;
+}
+
+.genre-wrapper
+{
+  line-height: 1em;
+  margin-bottom: 8px;
+  white-space: nowrap;
+}
+
+.genre-wrapper a
+{
+  color: #8E8E8E;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1;
+  overflow: hidden;
+  text-transform: uppercase;
+}

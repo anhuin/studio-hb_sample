@@ -1,0 +1,20 @@
+<div class="snippet snippet-small">
+  <div class="thumbnail-wrapper">
+    <%= link_to(:controller => "engine", :action => "show", :id => small_engine.id) do %>
+        <%= image_tag url_for(:controller => "engine", :action => "show_picture", :id => small_engine.id), :class => "thumbnail" %>
+    <% end %>
+  </div>
+  <div class="details">
+    <%= link_to(:controller => "engine", :action => "show", :id => small_engine.id) do %>
+        <%= small_engine.title %>
+    <% end %>
+    <div class="genre-wrapper">
+      <% if !small_engine.genres.first.nil? %>
+        <a href="#"><%= small_engine.genres.first.name %></a>
+      <% end %>
+    </div>
+    <div class="progress progress-success" style="margin-bottom: 9px;">
+      <div class="bar" style="width: 100%"></div>
+    </div>
+  </div>
+</div>

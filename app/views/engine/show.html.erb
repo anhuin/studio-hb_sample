@@ -1,0 +1,81 @@
+<div class="span3"></div>
+<div class="span6 thumbnail">
+    <table class="layout-table">
+      <colgroup>
+        <col width="316">
+        <col width="4">
+        <col width="100%">
+      </colgroup>
+      <tbody>
+      <tr>
+        <td>
+          <div>
+            <%= image_tag url_for(:controller => "engine", :action => "show_picture", :id => @engine.id) %>
+          </div>
+        </td>
+        <td rowspan="4"></td>
+        <td>
+          <div>
+            <h1> <%= @engine.title %></h1>
+            <div>
+              <h5>
+                <% @engine.genres.each_with_index do |g, idx| %>
+                    <% if idx != 0%>
+                        -
+                    <% end %>
+                    <%= g.name %>
+                <% end %>
+              </h5>
+            </div>
+            <p></p>
+              <h3>Synopsis</h3>
+              <p> <%= @engine.synopsis %> </p>
+          </div>
+          <div>
+            <h3>Credits</h3>
+            <div>
+                <table>
+                  <tbody>
+                  <tr>
+                    <td class="credit-label"><h6>Actors</h6></td>
+                    <td class="credit-cell">
+                      <% @engine.actors.each_with_index do |a, idx| %>
+                          <% if idx != 0%>
+                            -
+                          <% end %>
+                          <%= a.first_name + " " + a.last_name %>
+                      <% end %>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="credit-label"><h6>Producers</h6></td>
+                    <td class="credit-cell">
+                      <% @engine.producers.each_with_index do |p, idx| %>
+                          <% if idx != 0%>
+                            -
+                          <% end %>
+                          <%= p.first_name + " " + p.last_name %>
+                      <% end %>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="credit-label"><h6>Directors</h6></td>
+                    <td class="credit-cell">
+                      <% @engine.directors.each_with_index do |d, idx| %>
+                          <% if idx != 0%>
+                            -
+                          <% end %>
+                          <%= d.first_name + " " + d.last_name %>
+                      <% end %>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+            </div>
+
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+</div>

@@ -1,0 +1,10 @@
+<div class="wish-list-container">
+  <h2 class="pagination-centered">Wish List</h2>
+  <ul class="snippet-list">
+    <% @wish_list.each.with_index do |engine, index| break if index == 5 %>
+        <li>
+          <%= render :partial => "home/small_engine", :object => engine %>
+        </li>
+    <% end %>
+  </ul>
+</div>

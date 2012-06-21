@@ -1,0 +1,20 @@
+<div class="top_scolling_wrapper">
+  <table>
+    <tbody>
+    <tr>
+      <% @current_products.each_with_index do |s, idx| break if idx == 9 %>
+          <td>
+            <div class="top_scrolling_jacket">
+              <div class="thumbnail">
+                <%= link_to(:controller => "engine", :action => "show", :id => s.id) do %>
+                    <%= image_tag url_for(:controller => "engine", :action => "show_picture", :id => s.id), :alt => s.title %>
+                <% end %>
+              </div>
+            </div>
+          </td>
+
+      <% end %>
+    </tr>
+    </tbody>
+  </table>
+</div>
